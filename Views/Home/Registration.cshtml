@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>Please Register Down Below </h1>
+
+@model Lab18CoffeeShop.Models.RegisterUser
+
+@using (var form = Html.BeginForm())
+ {
+    <div>
+
+        @Html.LabelFor(m => m.UserName)
+        @Html.TextBoxFor(m => m.UserName)
+    </div>
+
+    <div>
+
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+
+
+
+    <div>
+
+        @Html.LabelFor(m => m.Password)
+        @Html.TextBoxFor(m => m.Password)
+    </div>
+
+
+    <input type="submit" value="Submit" />
+ }
+<style>
+    body
+    {
+        
+       
+    }
+</style>
