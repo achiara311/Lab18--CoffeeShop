@@ -3,14 +3,71 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome there!</h1>
+    <h1 class="Hey_title">Welcome to Caffe.  </h1>
+    <p>
+    <h2 class="Hey_sub">That's Italian for coffee.</h2>
+        </p>
+    
+</div>
+<div class="registration-center">
+    <p>
    <h3> <a class= "te" asp-controller="Home" asp-action="Registration">Registration</a></h3>
+    </p>
 </div>
 
+@using (Html.BeginForm())
+{
+
+}
 
 <style>
     body {
-        background-image:url(https://lh3.googleusercontent.com/whSb2NbuGWDpRPxGCU98qc6c0Bf_BfWys-AsA0HPIxcoFtXCdCvOJiRwFBn_mF_bRljvEWI=s170);
+        background-image:url(https://sm.mashable.com/t/mashable_sea/image/s/save-over-/save-over-ps180-and-create-beautiful-latte-art-with-the-nesp_p2jw.910.jpg);
             background-size:cover;
+           }
+
+    .Hey_title{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 36px;
+       letter-spacing: 5px;
     }
-</style>
+
+
+    .Hey_sub{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 26px;
+       letter-spacing: 5px;
+       font-style:italic;
+    }
+
+    .te{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 5px solid white;
+        background-position-y: center;
+    background-position-x: center;
+
+    }
+
+    .registration-center{
+        
+        color: #f7f5f3;
+    letter-spacing: .123em;
+    margin: 0;
+    
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    text-transform: uppercase;
+    font: 700 20x / 1em 'Raleway','Helvetica Neue',sans-serif;
+    position: relative ;
+    left: 40.5%;
+    top: 10.5em;
+    
+    }
+
+
+ </style>

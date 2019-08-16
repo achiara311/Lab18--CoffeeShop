@@ -17,7 +17,7 @@ namespace Lab18CoffeeShop.Controllers
 
         public IActionResult Index()
         {
-            return View(new RegisterUser()); ;
+            return View(new RegisterUser()); 
         }
 
         [HttpGet]
