@@ -3,7 +3,7 @@
     ViewData["Title"] = "Registration";
 }
 
-<h1>Please Register Down Below </h1>
+<h1 class="head">Please Register Down Below </h1>
 
 
 
@@ -12,13 +12,13 @@
 
 @using (var form = Html.BeginForm())
  {
-    <div>
+    <div class="one">
 
         @Html.LabelFor(m => m.UserName)
         @Html.TextBoxFor(m => m.UserName, new { @class = "form-input", placeholder = "User Name" })
     </div>
 
-    <div>
+    <div class="two">
 
         @Html.LabelFor(m => m.Email)
         @Html.TextBoxFor(m => m.Email, new { @class = "form-input", placeholder = "Email" })
@@ -26,7 +26,7 @@
 
 
 
-    <div>
+    <div class=" three">
 
         @Html.LabelFor(m => m.Password)
         @Html.PasswordFor(m => m.Password, new { @class = "form-input", placeholder = "Password" })
@@ -41,7 +41,35 @@
 <style>
     body
     {
-        
+        background-image:url(https://www.sciencenews.org/sites/default/files/main/articles/100315_coffee_opener_NEW_0.jpg);
+            background-size:cover;
        
+    }
+
+
+    .one{
+        font-family: Arial, Helvetica, sans-serif;
+       
+        color: white;
+        font-size: 16px;
+    }
+    .two{
+        font-family: Arial, Helvetica, sans-serif;
+     
+        color: white;
+        font-size: 16px;
+    }
+
+    .three{
+        font-family: Arial, Helvetica, sans-serif;
+       
+        color: white;
+        font-size: 16px;
+    }
+    .head{
+        font-family: Arial, Helvetica, sans-serif;
+       
+        color: white;
+    
     }
 </style>
