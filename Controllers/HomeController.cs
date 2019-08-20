@@ -29,12 +29,35 @@ namespace Lab18CoffeeShop.Controllers
         [HttpPost]
         public IActionResult Registration(RegisterUser heyThere)
         {
-            return RedirectToAction("Summary", heyThere);
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Summary", heyThere); //makes validation work
+            }
+            else
+            {
+                return View(heyThere);
+            }
+            
+
         }
 
         public IActionResult Summary(RegisterUser heyThere)
         {
             return View(heyThere);
+            
+        }
+
+        [HttpPost] //HttpGet is created by default?
+        public IActionResult DisplayInfo(RegisterUser user)
+        {
+            if (ModelState.IsValid)
+            {
+                return View(user); //sees if it matches datatypes and annotations
+            }
+            else
+            {
+                return View("Index", user); //goes to Error in the HomeController
+            }
         }
 
 
