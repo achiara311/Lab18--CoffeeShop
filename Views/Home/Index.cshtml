@@ -15,59 +15,91 @@
     </p>
 </div>
 
-@using (Html.BeginForm())
-{
+<form asp-action="ListOfRegisteredUsers" asp-controller="Home" method="post" class="border-dark">
 
-}
-
-<style>
-    body {
-        background-image:url(https://sm.mashable.com/t/mashable_sea/image/s/save-over-/save-over-ps180-and-create-beautiful-latte-art-with-the-nesp_p2jw.910.jpg);
-            background-size:cover;
-           }
-
-    .Hey_title{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 36px;
-       letter-spacing: 5px;
-    }
-
-
-    .Hey_sub{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 26px;
-       letter-spacing: 5px;
-       font-style:italic;
-    }
-
-    .te{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: white;
-        border: 5px solid white;
-        background-position-y: center;
-    background-position-x: center;
-
-    }
-
-    .registration-center{
+  
         
-        color: #f7f5f3;
-    letter-spacing: .123em;
-    margin: 0;
-    
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
-    text-transform: uppercase;
-    font: 700 20x / 1em 'Raleway','Helvetica Neue',sans-serif;
-    position: relative ;
-    left: 40.5%;
-    top: 10.5em;
-    
-    }
+    <div class="login-1">
+            UserName:
+            <input type="text" name="UserName" value="" />
+    </div>
+    <div class="login-2,col-1">
+        Password:
+        <input type="text" name="Password" value="" />
+    </div>
 
 
- </style>
+            Remember Me?
+            yes:
+            <input type="radio" name="RememberLogin" value="yes" />
+            no:
+            <input type="radio" name="RememberLogin" value="no" />
+           
+
+            <input type="submit" value="Login" />
+            
+       
+
+</form>
+        @using (Html.BeginForm())
+        {
+
+        }
+
+        <style>
+            body {
+                background-image: url(https://sm.mashable.com/t/mashable_sea/image/s/save-over-/save-over-ps180-and-create-beautiful-latte-art-with-the-nesp_p2jw.910.jpg);
+                background-size: cover;
+            }
+
+            .Hey_title {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+
+
+            .Hey_sub {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 26px;
+                letter-spacing: 5px;
+                font-style: italic;
+            }
+
+            .te {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: white;
+                border: 5px solid white;
+                background-position-y: center;
+                background-position-x: center;
+            }
+
+            .registration-center {
+                color: #f7f5f3;
+                letter-spacing: .123em;
+                margin: 0;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+                text-transform: uppercase;
+                font: 700 20x / 1em 'Raleway','Helvetica Neue',sans-serif;
+                position: relative;
+                left: 40.5%;
+                top: 10.5em;
+            }
+
+            .border-dark{
+                position: relative;
+                 font: 700 20x / 1em 'Raleway','Helvetica Neue',sans-serif;
+                position: relative;
+                color:white;
+                text-align:center;
+            }
+            .login-1{
+                 position: relative;
+                text-align:center;
+            }
+        </style>

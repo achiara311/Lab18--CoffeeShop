@@ -31,3 +31,5 @@ C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreap
 C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\Registration.g.cshtml.cs
 C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\Summary.g.cshtml.cs
 C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\DisplayInfo.g.cshtml.cs
+C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\LoginForm.g.cshtml.cs
+C:\Users\achia\OneDrive\Desktop\LabsWeekFive\Lab18CoffeeShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\ListOfRegisteredUsers.g.cshtml.cs

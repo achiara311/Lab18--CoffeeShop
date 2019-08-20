@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "LoginForm";
+}
+
+<h1>LoginForm</h1>
+
+<form class="form-control" asp-action="SaveLoginInfo" asp-controller="Home" method="post">
+
+
+    UserName: <input type="text" name="UserName" value="" />
+    
+    Password: <input type="text" name="Password" value="" />
+   
+
+    Remember Me?
+    yes: <input type="radio" name="RememberLogin" value="yes" />
+    no: <input type="radio" name="RememberLogin" value="no" />
+
+    <input type="submit" value="Remember Login" />
+
+
+</form>
