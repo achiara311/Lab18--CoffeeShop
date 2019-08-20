@@ -12,20 +12,20 @@ namespace Lab18CoffeeShop.Models
         [StringLength(30, ErrorMessage = "Must be less than 30 characters.")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Not a cool nickname apparently.")]
-        [StringLength(20, ErrorMessage = "Not a cool nickname apparently.")]
+     
         public string NickName { get; set; }
 
         [Required]
         [StringLength(30, ErrorMessage = "Must be less than 30 characters.")]
-        [RegularExpression("\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\b/", ErrorMessage = "Must have @ symbol.")]
+        //[RegularExpression("\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\b/", ErrorMessage = "Must have @ symbol.")]
+        [RegularExpression("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]
         public string Email { get; set; }
 
         public string Password { get; set; }
 
 
-        [RegularExpression("[(]?\\d{3}[-.)]?[ ]?\\d{3}[-.]?\\d{4}\b", ErrorMessage = "Must be 10 numbers only.")]
-        public int PhoneNumber { get; set; }
+        [RegularExpression(@"^[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}$", ErrorMessage = "Must be 10 numbers only.")]
+        public string PhoneNumber { get; set; }
 
         [Required]
         [RegularExpression("[0-9]{5}(-[0-9]{4})?", ErrorMessage = "Too many numbers")]
